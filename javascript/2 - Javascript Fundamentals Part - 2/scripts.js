@@ -202,9 +202,9 @@
 // console.log(totals);
 
 // Introduction to Objects
-function userName(user) {
-    return `Username: ${user}`
-}
+// function userName(user) {
+//     return `Username: ${user}`
+// }
 
 // const userArray = [
 //     "firstName": "James", 
@@ -353,14 +353,14 @@ function userName(user) {
 
 //////////
 // Looping Arrays, Break and Continue
-const jonas = [
-    "Jonas", 
-    "Schemn", 
-    2037 - 1991, 
-    "teacher", 
-    ["Micheal", "Peter", "Steven"], 
-    true
-];
+// const jonas = [
+//     "Jonas", 
+//     "Schemn", 
+//     2037 - 1991, 
+//     "teacher", 
+//     ["Micheal", "Peter", "Steven"], 
+//     true
+// ];
 
 // const types = [];
 
@@ -388,7 +388,7 @@ const jonas = [
 // console.log(ages);
 
 // continue and break
-console.log("----- ONLY STRINGS -----");
+// console.log("----- ONLY STRINGS -----");
 // for (let i = 0; i < jonas.length; i++) {
 //     if (typeof jonas[i] !== "string") {
 //         continue;
@@ -396,10 +396,75 @@ console.log("----- ONLY STRINGS -----");
 //     console.log(`value => ${jonas[i]}`);
 // }
 
-console.log("----- ONLY STRINGS -----");
-for (let i = 0; i < jonas.length; i++) {
-    if (typeof jonas[i] !== "string") {
-        break;
-    }
-    console.log(`value => ${jonas[i]}`);
-}
+// console.log("----- ONLY STRINGS -----");
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] !== "string") {
+//         break;
+//     }
+//     console.log(`value => ${jonas[i]}`);
+// }
+
+// Looping Backwards and loops in loops
+// const jonas = [
+//     "Jonas", 
+//     "Schemn", 
+//     2037 - 1991, 
+//     "teacher", 
+//     ["Micheal", "Peter", "Steven"], 
+//     true
+// ];
+
+// for (let excercise = 1; excercise < 4; excercise++) {
+//     console.log(`--------- Starting excercise ${excercise}`);
+
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Excercise ${excercise}: Lifting weight repetition ${rep}`);
+//     }
+// }
+
+// while loop
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`WHILE: Lifting weights repetition ${rep}`);
+//     rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// let i = 1;
+// while (dice !== 6) {
+//     if (i === 4) {
+//         break;
+//     }
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     i++;
+// }
+
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
+// const bills = [22, 246, 145, 46, 190, 35, 93];
+// const tips = [];
+// const totals = [];
+
+// for (let i = 0; i < bills.length; i++) {
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(tip + bills[i]);
+// }
+
+// console.log(bills, tips, totals);
+
+
+// const calcAverage = function (arr) {
+//     let sum = 0;
+    
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i]; // sum = sum + arr[i]
+//     }
+
+//     return sum / arr.length;
+// }
+
+// console.log(calcAverage([2, 4, 7]));

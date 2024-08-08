@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form DOM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function handleFocus () {
+            event.target.style.backgroundColor = 'lightyellow';
+        }
+
+        function handleBlur () {
+            event.target.style.backgroundColor = 'lightblue';
+        }
+
+        function handleRadioClick () {
+            alert(`selected value: ${event.target.value}`);
+        }
+
+        function handleCheckbox () {
+            if (event.target.checked) {
+                alert (`Checked: ` + event.target.value);
+            } else {
+                alert (`UnChecked: ` + event.target.value);
+            }
+        }
+
+        function handleSelectChange () {
+            alert(`Selected option: ${event.target.value}`);
+        }
+
+        function handleSelect () {
+            alert(`Text selected: ${window.getSelection().toString()}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Javascript Form DOM</h1>
+
+    <section>
+        <h3>Event Handling Example - `onfocus`, `onblur`</h3>
+        <div>
+            <label for="">Name</label>
+            <input type="text" name="name" id="name" value="" onfocus="handleFocus()" onblur="handleBlur()" />
+        </div>
+    </section>
+    
+    <section>
+        <h3>Event Handling Example - `onclick` with Radio Buttons</h3>
+        <div>
+            <label for="">
+                <input type="radio" name="gender" value="male" onclick="handleRadioClick()"> male 
+            </label>
+            <label for="">
+                <input type="radio" name="gender" value="female" onclick="handleRadioClick()"> female 
+            </label>
+        </div>
+    </section>
+    
+    <section>
+        <h3>Event Handling Example - `onclick` with Checkboxes</h3>
+        <div>
+            <label for="">
+                <input type="checkbox" name="options" value="option 1" onclick="handleCheckbox()"> Option 1
+            </label>
+            <label for="">
+                <input type="checkbox" name="options" value="option 2" onclick="handleCheckbox()"> Option 2
+            </label>
+        </div>
+    </section>
+
+    <section>
+        <h3>Event Handling Example - `onchange` with SelectDropDown</h3>
+        <select name="" id="colors" onchange = "handleSelectChange ()">
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+        </select>
+    </section>
+
+
+    <section>
+        <h3>Event Handling Example - `onselect` with Textarea</h3>
+        <textarea name="" id="" onselect = "handleSelect()">
+            select some text in this textarea to trigger the onselect event
+        </textarea>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Embedded Code
+    </script>
+</body>
+</html>

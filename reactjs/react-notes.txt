@@ -1,0 +1,4 @@
+1. creating a react project
+	1. vite
+	2. create-react-app
+
