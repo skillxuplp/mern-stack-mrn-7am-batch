@@ -1,9 +1,0 @@
-1. creating the react project
-2. creating and using the component(s)
-3. displaying the dynamic values - providing the position no. dynamically to the array variable
-4. displaying the images - importing the images and displaying those images with its name
-5. components and its properties (a function with parameters) - props
-6. another way of accessing props - ({prop1, prop2, ....})
-7. segregating the components coding in separate folders / files
-8. styled the components
-9. understanding about children properties (~)
